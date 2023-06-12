@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.container {
+    width: 95%;
+    max-width: 950px;
+    padding: 0 2rem;
+    margin: 0 auto;
+    /* border: 2px solid magenta; */
+}
+
+header {
+    background-image: url(../images/resturant1.avif);
+    background-size: cover;
+    color: #fff;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+header nav .logo {
+    width: 25%;
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: rgb(234, 97, 97);
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 75%;
+}
+
+header nav ul li{
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.more {
+    display: none;
+    color: rgb(234, 97, 97);
+}
+
+main {
+    padding: 3rem 1.5rem;
+}
+
+main h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+main ul {
+    list-style: none;
+    display: flex;
+}
+
+main ul li {
+    margin-left: 1.5rem;
+}
+
+.section-first {
+    padding: 3rem 0;
+    background-image: url(../images/resturant10.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+}
+
+.first-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 0 0 25rem;
+}
+
+.section-first span {
+    color: orange;
+    font-weight: 800;
+    margin: .5rem;
+}
+
+.section-first h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+}
+
+.active {
+    color: orange;
+}
+
+.section-first p {
+    margin-bottom: 1rem;
+}
+
+.section-first a {
+    background: orange;
+    text-decoration: none;
+    width: fit-content;
+    padding: .5rem 1rem;
+}
+
+.section-second {
+    padding: 3rem 0;
+    background: rgb(242,246,247);
+}
+
+.menu-titles {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-titles span {
+    color: orange;
+    margin-bottom: .4rem;
+}
+
+.menu-titles h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-titles ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-decoration: underline;
+}
+
+.menu-titles li {
+    margin-left: 2rem;
+    font-size: 1.5rem;
+}
+
+.menu-images {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-images img {
+    width: 23%;
+    margin-bottom: 1rem;
+}
+
+.menu-images img:nth-child(4) {
+    order: 2;
+}
+
+.contact {
+    /* border: 2px solid pink; */
+    padding: 3rem 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact span {
+    color: orange;
+}
+
+.contact h2 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact .number {
+    color: orange;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.time {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    
+}
+
+.section-third {
+    padding: 3rem;
+    /* background-image: url(../images/food.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* color: cornflowerblue; */
+}
+
+.section-third img {
+    width: 100%;
+}
+.section-fourth {
+    text-align: center;
+    padding: 3rem;
+    background-color: rgb(12, 4, 55);
+    color: #fff;
+}
+
+
+.section-fourth span {
+    color: orange;
+}
+
+.section-fourth h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.c-name {
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.section-fourth img {
+    width: 30%;
+    border-radius: 70%;
+}
+
+@media (max-width: 768px) {
+    .section-first {
+        background: #ffffff;
+    }
+
+    .first-flex {
+        padding: 0;
+        text-align: center;
+    }
+
+    .section-first a {
+        align-self: center;
+    }
+
+    header nav {
+        flex-direction: column;
+    }
+
+    main {
+        text-align: center;
+    }
+
+    form {
+        display: none;
+    }
+
+    main ul {
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 520px) {
+    main h1 {
+        font-size: 3rem;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav {
+        flex-direction: row;
+    }
+
+    
+    .more {
+        display: block;
+    }
+
+
+}
