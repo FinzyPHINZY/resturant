@@ -147,6 +147,7 @@ main ul li {
 .menu-titles h2 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    text-align: center;
 }
 
 .menu-titles ul {
@@ -194,6 +195,7 @@ main ul li {
 .contact h2 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 .contact .number {
@@ -298,6 +300,10 @@ main ul li {
     
     .more {
         display: block;
+    }
+
+    .contact .number {
+        font-size: 1rem;
     }
 
 
